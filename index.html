@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | E-commerce product page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script defer src="index.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="nav">
+				<div class="nav__toggle-bar">
+					<img src="images/icon-menu.svg" alt="" />
+				</div>
+				<div class="nav__brand">
+					<img src="images/logo.svg" alt="logo" class="nav__brand--img" />
+				</div>
+				<ul class="nav__items">
+					<li class="nav__list">
+						<a href="#" class="nav__link">Collections</a>
+					</li>
+					<li class="nav__list">
+						<a href="#" class="nav__link">Men</a>
+					</li>
+					<li class="nav__list">
+						<a href="#" class="nav__link">Women</a>
+					</li>
+					<li class="nav__list">
+						<a href="#" class="nav__link">About</a>
+					</li>
+					<li class="nav__list">
+						<a href="#" class="nav__link">Contact</a>
+					</li>
+				</ul>
+				<div class="nav__basket">
+					<div class="nav__basket--cart">
+						<img src="images/icon-cart.svg" alt="cart" />
+						<span class="product-quantity hidden"></span>
+						<div class="cartDropDown hidden">
+							<h2>Cart</h2>
+							<div class="emptyCart">Your Cart is empty</div>
+						</div>
+					</div>
+					<div class="nav__basket--avatar">
+						<img src="images/image-avatar.png" alt="profile-img" />
+					</div>
+				</div>
+			</nav>
+
+			<main class="main">
+				<section class="main__left">
+					<div class="main__left--product">
+						<img src="images/image-product-1.jpg" alt="product-1-" />
+					</div>
+					<div class="main__lighthouse">
+						<div class="main__lighthouse--thumbnail thumbnail-selected">
+							<img
+								src="images/image-product-1-thumbnail.jpg"
+								alt="product-1-thumbnail"
+								data="1"
+							/>
+						</div>
+						<div class="main__lighthouse--thumbnail">
+							<img
+								src="images/image-product-2-thumbnail.jpg"
+								alt="product-2-thumbnail"
+							/>
+						</div>
+						<div class="main__lighthouse--thumbnail">
+							<img
+								src="images/image-product-3-thumbnail.jpg"
+								alt="product-3-thumbnail"
+							/>
+						</div>
+						<div class="main__lighthouse--thumbnail">
+							<img
+								src="images/image-product-4-thumbnail.jpg"
+								alt="product-4-thumbnail"
+							/>
+						</div>
+					</div>
+				</section>
+				<section class="main__right">
+					<span class="main__right--company-title">SNEAKER COMPANY</span>
+					<h1 class="main__right--text">Fall Limited Edition Sneakers</h1>
+					<p class="main__right--paragraph">
+						These low-profile sneakers are your perfect casual wear
+						companion. Featuring a durable rubber outer sole, they’ll
+						withstand everything the weather can offer.
+					</p>
+					<div class="amount">
+						<div class="amount__price">
+							<h2 class="amount__price--main">$125.00</h2>
+							<p class="amount__price--discount">50%</p>
+						</div>
+
+						<div class="amount--main">$250.00</div>
+					</div>
+					<div class="cta">
+						<div class="cta__btns">
+							<button class="btn cta__remove">-</button>
+							<p class="cta__number">0</p>
+							<button class="btn cta__add">+</button>
+						</div>
+						<button class="cta__btn">Add to cart</button>
+					</div>
+				</section>
+			</main>
+			<div class="modal hidden">
+				<button class="btn--close-modal">&times;</button>
+				<div class="modal--product">
+					<img src="images/image-product-1.jpg" alt="product-1-" />
+				</div>
+				<button class="slider__btn slider__btn--left">
+					<img src="images/icon-previous.svg" alt="" />
+				</button>
+				<button class="slider__btn slider__btn--right">
+					<img src="images/icon-next.svg" alt="" />
+				</button>
+				<div class="modal__lighthouse">
+					<div class="thumbnail-selected modal__thumbnail">
+						<img
+							src="images/image-product-1-thumbnail.jpg"
+							alt="product-1-thumbnail"
+							data="1"
+						/>
+					</div>
+					<div class="modal__thumbnail">
+						<img
+							src="images/image-product-2-thumbnail.jpg"
+							alt="product-2-thumbnail"
+						/>
+					</div>
+					<div class="modal__thumbnail">
+						<img
+							src="images/image-product-3-thumbnail.jpg"
+							alt="product-3-thumbnail"
+						/>
+					</div>
+					<div class="modal__thumbnail">
+						<img
+							src="images/image-product-4-thumbnail.jpg"
+							alt="product-4-thumbnail"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="overlay hidden"></div>
+		</div>
+
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>
