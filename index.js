@@ -5,11 +5,18 @@ const btn_addCart = document.querySelector('.cta__btn');
 const btn_cart = document.querySelector('.nav__basket--cart');
 const btn_thumbnail = document.querySelectorAll('.main__lighthouse--thumbnail');
 const btn_navItem = document.querySelector('.nav__items');
+const btn_toggleMenu = document.querySelector('.nav__toggle-bar');
+const btn_closeMobileMenuToggle = document.querySelector(
+	'.mobile-menu__btn--close'
+);
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileOverLay = document.querySelector('.mobile-menu__overlay');
 // Labels
 const label_productQuantity = document.querySelector('.cta__number');
 const label_productQuantityCart = document.querySelector('.product-quantity');
 
 //
+const container = document.querySelector('.container');
 const mainProduct = document.querySelector('.main__left--product');
 const cartDropDown = document.querySelector('.cartDropDown');
 const model = document.querySelector('.modal');
@@ -88,5 +95,24 @@ btn_thumbnail.forEach(ele => {
 document.addEventListener('keydown', function (e) {
 	if (e.key === 'Escape' && !model.classList.contains('hidden')) {
 		closeModel();
+	}
+});
+
+const closeMobileMenu = function () {
+	mobileMenu.classList.add('hidden');
+	mobileOverLay.classList.add('hidden');
+};
+
+const openMobileMenu = function () {
+	mobileMenu.classList.remove('hidden');
+	mobileOverLay.classList.remove('hidden');
+};
+btn_toggleMenu.addEventListener('click', openMobileMenu);
+btn_closeMobileMenuToggle.addEventListener('click', closeMobileMenu);
+mobileOverLay.addEventListener('click', closeMobileMenu);
+
+document.addEventListener('keydown', function (e) {
+	if (e.key === 'Escape' && !btn_toggleMenu.classList.contains('hidden')) {
+		closeMobileMenu();
 	}
 });

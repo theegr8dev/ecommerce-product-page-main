@@ -21,6 +21,27 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="mobile-menu hidden">
+				<button class="mobile-menu__btn--close">&times;</button>
+				<ul class="mobile-menu__items">
+					<li class=""mobile-menu__list">
+						<a href="#" class="mobile-menu__link">Collections</a>
+					</li>
+					<li class="mobile-menu__list">
+						<a href="#" class="mobile-menu__link">Men</a>
+					</li>
+					<li class="mobile-menu__list">
+						<a href="#" class="mobile-menu__link">Women</a>
+					</li>
+					<li class="mobile-menu__list">
+						<a href="#" class="mobile-menu__link">About</a>
+					</li>
+					<li class="mobile-menu__list">
+						<a href="#" class="mobile-menu__link">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mobile-menu__overlay hidden"></div>
 			<nav class="nav">
 				<div class="nav__toggle-bar">
 					<img src="images/icon-menu.svg" alt="" />
@@ -59,7 +80,6 @@
 					</div>
 				</div>
 			</nav>
-
 			<main class="main">
 				<section class="main__left">
 					<div class="main__left--product">
@@ -119,6 +139,7 @@
 					</div>
 				</section>
 			</main>
+
 			<div class="modal hidden">
 				<button class="btn--close-modal">&times;</button>
 				<div class="modal--product">
