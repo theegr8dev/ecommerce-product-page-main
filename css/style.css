@@ -22,6 +22,10 @@ li {
   list-style: none;
 }
 
+.show {
+  display: block;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -59,6 +63,7 @@ li {
   position: absolute;
   background-color: hsl(0deg, 0%, 100%);
   opacity: 70%;
+  z-index: 0;
 }
 
 .nav {
@@ -164,6 +169,7 @@ li {
 }
 .main__left--product {
   width: 42rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 26.5625em) {
   .main__left--product {
@@ -505,6 +511,11 @@ li {
   z-index: 1000;
   transition: all 0.5s;
 }
+@media screen and (max-width: 26.5625em) {
+  .modal {
+    display: none;
+  }
+}
 .modal--product {
   width: 53rem;
 }
@@ -548,6 +559,11 @@ li {
   z-index: 100;
   transition: all 0.5s;
 }
+@media screen and (max-width: 26.5625em) {
+  .overlay {
+    display: none;
+  }
+}
 
 .btn--close-modal {
   font-family: inherit;
@@ -559,6 +575,11 @@ li {
   cursor: pointer;
   border: none;
   background: none;
+}
+@media screen and (max-width: 26.5625em) {
+  .btn--close-modal {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

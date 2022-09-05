@@ -5,6 +5,10 @@ $color-darkGrayish: hsl(219, 9%, 45%);
 $color-black: hsl(0, 0%, 0%);
 $color-white: hsl(0, 0%, 100%);
 
+.show {
+    display: block;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -46,6 +50,7 @@ $color-white: hsl(0, 0%, 100%);
         position: absolute;
         background-color: $color-white;
         opacity: 70%;
+        z-index: 0;
     }
 }
 
@@ -87,7 +92,6 @@ $color-white: hsl(0, 0%, 100%);
             left: 22px;
         }
 
-        img {}
     }
 
     &__items {
@@ -169,6 +173,7 @@ $color-white: hsl(0, 0%, 100%);
 
         &--product {
             width: 42rem;
+            cursor: pointer;
 
             @media screen and (max-width:26.5625em) {
                 width: 100%;
